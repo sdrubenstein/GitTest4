@@ -29,7 +29,12 @@ namespace GitTest4p1
 
         private void myClickButton_Click(object sender, RoutedEventArgs e)
         {
-            helloTextBlock.Text = "You Clicked!";
+            helloTextBlock.Text = "No, I win!";
+        }
+
+        private void helloTextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

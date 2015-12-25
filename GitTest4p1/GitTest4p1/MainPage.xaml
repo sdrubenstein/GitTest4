@@ -9,7 +9,7 @@
 
     <StackPanel Background="Coral">
         <Rectangle Fill="Blue" Width="100" Height="100"/>
-        <TextBlock x:Name="helloTextBlock" HorizontalAlignment="Center" FontSize="40">
+        <TextBlock x:Name="helloTextBlock" HorizontalAlignment="Center" FontSize="40" SelectionChanged="helloTextBlock_SelectionChanged">
         	<Run Text="Hello World"/>
         </TextBlock>
         <Grid HorizontalAlignment="Stretch">
