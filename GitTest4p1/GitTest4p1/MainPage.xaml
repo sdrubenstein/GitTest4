@@ -9,7 +9,15 @@
 
     <StackPanel Background="Coral">
         <Rectangle Fill="Blue" Width="100" Height="100"/>
-        <TextBlock Name="helloTextBlock" HorizontalAlignment="Center" FontSize="40">Hello World</TextBlock>
-        <Button Name="myClickButton" Click="myClickButton_Click" Content="Click Me" HorizontalAlignment="Right"/>
+        <TextBlock x:Name="helloTextBlock" HorizontalAlignment="Center" FontSize="40">
+        	<Run Text="Hello World"/>
+        </TextBlock>
+        <Grid HorizontalAlignment="Stretch">
+            <TextBlock x:Name="buttonTextBlock" FontSize="20">
+                Believe me, click this button:
+            </TextBlock>
+            <Button x:Name="myClickButton" Click="myClickButton_Click" Content="Click Me" HorizontalAlignment="Right"/>
+        </Grid>
+        
     </StackPanel>
 </Page>
